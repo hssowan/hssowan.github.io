@@ -1,3 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HSS Owan - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <!-- Optional: add images/logo in images/logo.png -->
+        <!-- <img src="images/logo.png" alt="HSS Owan"> -->
+        <div>
+          <h1>HSS Owan</h1>
+          <div style="color:var(--accent);font-size:0.9rem">High School, Sowan</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="teachers.html">Teachers</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blackboard card">
+        <h2 class="chalk" id="chalkText">Coming Soon</h2>
+        <div class="lead">New school website launching soon. Check back for updates!</div>
+      </section>
+
+      <section class="card">
+        <h3>Quick Links</h3>
+        <p style="color:var(--accent)">Admissions • Notices • Events</p>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // animate text like before (simple type)
+    const el = document.getElementById('chalkText');
+    const text = 'Coming Soon';
+    el.textContent = '';
+    let i=0;
+    function type(){
+      if(i<=text.length){
+        el.textContent = text.slice(0,i);
+        i++;
+        setTimeout(type, 110);
+      }
+    }
+    setTimeout(type, 600);
+  </script>
+</body>
+</html>
+
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,3 +152,4 @@
 </script>
 </body>
 </html>
+-->
